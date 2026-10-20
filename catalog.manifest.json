@@ -1,0 +1,61 @@
+{
+  "$schema": "./schema/manifest.schema.json",
+  "catalogVersion": "1.1.0",
+  "updatedAt": "2026-10-20T18:00:00Z",
+  "source": {
+    "provider": "Internet Archive",
+    "itemIdentifier": "it-it_windows_11_consumer_editions_version_24h2_updated_sep_2025_x64_dvd_6d1ad20d",
+    "metadataApi": "https://archive.org/metadata/it-it_windows_11_consumer_editions_version_24h2_updated_sep_2025_x64_dvd_6d1ad20d/files",
+    "officialSourceDisclaimer": "Third-party preserved media snapshots. Always verify hashes before use. Official downloads available at https://www.microsoft.com/software-download/windows11"
+  },
+  "images": {
+    "win11-23h2": {
+      "key": "win11-23h2",
+      "edition": "Windows 11 Consumer Editions 23H2 (Updated Sep 2025) x64 Italian",
+      "filename": "it-it_windows_11_consumer_editions_version_23h2_updated_sep_2025_x64_dvd_98118d6e.iso",
+      "url": "https://archive.org/download/it-it_windows_11_consumer_editions_version_24h2_updated_sep_2025_x64_dvd_6d1ad20d/it-it_windows_11_consumer_editions_version_23h2_updated_sep_2025_x64_dvd_98118d6e.iso",
+      "sizeBytes": 7406548992,
+      "sha1": "77e93248f5ccaf8ae0fe3e44efefc916c3db258a",
+      "md5": "b350db02a212eb50516d58e88e6e62d6",
+      "crc32": "91a4ab4f",
+      "architecture": "x64",
+      "language": "it-it"
+    },
+    "win11-24h2": {
+      "key": "win11-24h2",
+      "edition": "Windows 11 Consumer Editions 24H2 (Updated Sep 2025) x64 Italian",
+      "filename": "it-it_windows_11_consumer_editions_version_24h2_updated_sep_2025_x64_dvd_6d1ad20d.iso",
+      "url": "https://archive.org/download/it-it_windows_11_consumer_editions_version_24h2_updated_sep_2025_x64_dvd_6d1ad20d/it-it_windows_11_consumer_editions_version_24h2_updated_sep_2025_x64_dvd_6d1ad20d.iso",
+      "sizeBytes": 7589093376,
+      "sha1": "93fbb724f607692352317b8f77587a2ad9c63274",
+      "md5": "d5eeae7b8ede2c5bed0ceb6dc8719cbf",
+      "crc32": "f31afcc4",
+      "architecture": "x64",
+      "language": "it-it"
+    },
+    "win11-25h2": {
+      "key": "win11-25h2",
+      "edition": "Windows 11 25H2 Build 26200.6584 Client Consumer x64 FRE Italian",
+      "filename": "26200.6584.250915-1905.25h2_ge_release_svc_refresh_CLIENT_CONSUMER_x64FRE_it-it.iso",
+      "url": "https://archive.org/download/it-it_windows_11_consumer_editions_version_24h2_updated_sep_2025_x64_dvd_6d1ad20d/26200.6584.250915-1905.25h2_ge_release_svc_refresh_CLIENT_CONSUMER_x64FRE_it-it.iso",
+      "sizeBytes": 7644715008,
+      "sha1": "0f374ed0b34f7decb3203800b7c8de24efeaef8f",
+      "md5": "c59d3b8f0ab1366acfa992ee324f61e8",
+      "crc32": "613e92e6",
+      "architecture": "x64",
+      "language": "it-it"
+    },
+    "win11-ltsc": {
+      "key": "win11-ltsc",
+      "edition": "Windows 11 Enterprise LTSC 2024 x64 Italian",
+      "filename": "it-it_windows_11_enterprise_ltsc_2024_x64_dvd_1e8cabb6.iso",
+      "url": "https://archive.org/download/it-it_windows_11_consumer_editions_version_24h2_updated_sep_2025_x64_dvd_6d1ad20d/it-it_windows_11_enterprise_ltsc_2024_x64_dvd_1e8cabb6.iso",
+      "sizeBytes": 5067823104,
+      "sha1": "1ab20dc8fbd98525ad6782e51eab3aa4f34c8e1d",
+      "md5": "5b708a6bd69876b9d89e10a682af43a5",
+      "crc32": "a98d0f7f",
+      "architecture": "x64",
+      "language": "it-it"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WindowsISOCatalogManifest",
+  "description": "Strict JSON schema for Assistente-Aggiornamento catalog.manifest.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "catalogVersion",
+    "updatedAt",
+    "source",
+    "images"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "catalogVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provider",
+        "itemIdentifier",
+        "metadataApi",
+        "officialSourceDisclaimer"
+      ],
+      "properties": {
+        "provider": { "type": "string" },
+        "itemIdentifier": { "type": "string" },
+        "metadataApi": { "type": "string", "format": "uri" },
+        "officialSourceDisclaimer": { "type": "string" }
+      }
+    },
+    "images": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "win11-23h2",
+        "win11-24h2",
+        "win11-25h2",
+        "win11-ltsc"
+      ],
+      "properties": {
+        "win11-23h2": { "$ref": "#/$defs/imageEntry" },
+        "win11-24h2": { "$ref": "#/$defs/imageEntry" },
+        "win11-25h2": { "$ref": "#/$defs/imageEntry" },
+        "win11-ltsc": { "$ref": "#/$defs/imageEntry" }
+      }
+    }
+  },
+  "$defs": {
+    "imageEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "edition",
+        "filename",
+        "url",
+        "sizeBytes",
+        "sha1",
+        "md5",
+        "crc32",
+        "architecture",
+        "language"
+      ],
+      "properties": {
+        "key": { "type": "string" },
+        "edition": { "type": "string" },
+        "filename": { "type": "string", "pattern": "\\.iso$" },
+        "url": { "type": "string", "format": "uri" },
+        "sizeBytes": { "type": "integer", "minimum": 1000000 },
+        "sha1": { "type": "string", "pattern": "^[0-9a-fA-F]{40}$" },
+        "md5": { "type": "string", "pattern": "^[0-9a-fA-F]{32}$" },
+        "crc32": { "type": "string", "pattern": "^[0-9a-fA-F]{8}$" },
+        "architecture": { "type": "string", "enum": ["x64", "arm64", "x86"] },
+        "language": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+# Auto-detect text files and normalize line endings
+* text=auto eol=lf
+
+# PowerShell scripts maintain CRLF for native Windows PowerShell compatibility
+*.ps1 text eol=crlf
+*.psm1 text eol=crlf
+*.psd1 text eol=crlf
+
+# Markdown and config files use LF
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Explicitly mark binary files
+*.iso binary
+*.img binary
+*.bin binary

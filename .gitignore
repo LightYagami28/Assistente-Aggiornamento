@@ -1,0 +1,42 @@
+# Credentials and Secrets
+*.key
+*.pem
+*.pfx
+*.p12
+*.asc
+.env
+.env.*
+secrets/
+
+# OS and ISO binaries
+*.iso
+*.img
+*.vhd
+*.vhdx
+*.vmdk
+*.bin
+
+# Temporary and log files
+*.tmp
+*.temp
+*.bak
+*.log
+*.swp
+*~
+
+# IDE and Editor artifacts
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS artifacts
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
+
+# Test outputs
+TestResults/
